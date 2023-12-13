@@ -7,20 +7,43 @@
     <title>Weather App</title>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="logo">
+            <h2>Weather Page</h2>
+        </div>
+        <div class="navmenu">
+            <ul>
+                <!-- <li><a href="index.html">Home</a></li> 
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li> -->
+                
+            </ul>
+            <div class="search-box">
+                <input type="search" class="search" placeholder="search here">
+                <i class="bx bx-search"></i>
+            </div>
+        </div>
+    </nav>
     <div class="background-container">
         <img src="/Image/pexels-photo-1107717.jpeg" alt="Background Image" class="background-image">
         <div class="content">
             <h1 class="headline">Your Headline Goes Here</h1>
             <div class="line"></div>
-            <button class="center-button">Click me</button>
+            
+            <button class="center-button" onclick="scrollToEnd()">Scroll to End</button>
         </div>
     </div>
+    
     <div class="search-container">
+        <p>Check Current Weather Data:</p>
         <div class="search-box">
+            
             <input type="text" id="cityInput" placeholder="Enter City">
             <button onclick="searchWeather()">Search</button>
         </div>
+        <p>Check Hourly Forecast 4 days:</p>
         <div class="search-box">
+            
             <input type="text" id="cityInput" placeholder="Enter City">
             <button onclick="searchWeather2()">Search</button>
         </div>

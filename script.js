@@ -1,3 +1,10 @@
+function scrollToEnd() {
+    // Scroll to the bottom of the page
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
+    });
+}
 function searchWeather() {
     const apiKey = '6c64698dc5c9adcc83b19e5baf735ed3'; // Replace with your OpenWeatherMap API key
     const city = document.getElementById('cityInput').value;
