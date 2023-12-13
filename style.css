@@ -48,7 +48,7 @@ body {
 .search-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     height: 20vh;
     background-color: #f0f0f0;
 }
@@ -79,13 +79,25 @@ body {
 .search-box button:hover {
     background-color: #45a049;
 }
+.weather-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
 .weather-card {
+    background-image: url('Image/cold.jpg');
+    background-size: cover; 
+    background-position: center; 
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    margin-top: 20px;
+    margin: 10px;
     text-align: center;
+    max-width: 400px;
 }
 
 .weather-card h2 {
@@ -101,4 +113,9 @@ body {
 .weather-details p {
     font-size: 16px;
     margin: 5px 0;
+}
+.weather-details img{
+    padding-top: 20px;
+    height: 50px;
+    width: 50px;
 }
