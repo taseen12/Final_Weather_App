@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@200&family=Ubuntu&display=swap" rel="stylesheet">
     <title>Weather App</title>
+    
 </head>
 <body>
     <nav class="navbar">
@@ -18,7 +23,7 @@
                 <li><a href="contact.html">Contact Us</a></li> -->
                 
             </ul>
-            <div class="search-box">
+            <div class="search-box2">
                 <input type="search" class="search" placeholder="search here">
                 <i class="bx bx-search"></i>
             </div>
@@ -27,7 +32,7 @@
     <div class="background-container">
         <img src="/Image/pexels-photo-1107717.jpeg" alt="Background Image" class="background-image">
         <div class="content">
-            <h1 class="headline">Your Headline Goes Here</h1>
+            <h1 class="headline">Climate is what we expect, weather is what we get</h1>
             <div class="line"></div>
             
             <button class="center-button" onclick="scrollToEnd()">Scroll to End</button>
@@ -41,18 +46,49 @@
             <input type="text" id="cityInput" placeholder="Enter City">
             <button onclick="searchWeather()">Search</button>
         </div>
-        <p>Check Hourly Forecast 4 days:</p>
+        <p>Check 5 days Weather Forecast:</p>
         <div class="search-box">
             
-            <input type="text" id="cityInput" placeholder="Enter City">
+            <input type="text" id="cityInput2" placeholder="Enter City">
             <button onclick="searchWeather2()">Search</button>
         </div>
     </div>
     <div id="weatherData" class="weather-data"></div>
         </div>
+        <div id="weatherData2" class="forecast-container"></div>
     </div>
     
-    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>1831050@iub.edu.bd</p>
+                <p>Phone: 01684-00000</p>
+                <p>Address: Lalmatia, Dhaka</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                <ul class="list">
+                    <li><a href="https://openweathermap.org/current">Current Weather Data</a></li> 
+                <li><a href="https://openweathermap.org/forecast5">5 days Forecast</a></li>
+                
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Social Media</h3>
+                <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2023 , WeatherPage all rights reserved</p>
+          </div>
+      </footer>
     <script src="script.js"></script>
 </body>
 </html>
