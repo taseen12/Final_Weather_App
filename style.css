@@ -79,3 +79,26 @@ body {
 .search-box button:hover {
     background-color: #45a049;
 }
+.weather-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.weather-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.weather-details h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.weather-details p {
+    font-size: 16px;
+    margin: 5px 0;
+}
